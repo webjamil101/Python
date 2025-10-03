@@ -1,0 +1,13 @@
+import matplotlib.pyplot as plt
+
+fig, ax = plt.subplots()
+x = [0, 1, 2, 3]
+y1 = [0, 1, 2, 3]
+y2 = [0, 1, 4, 9]
+
+ax.plot(x, y1, label='Linear', linestyle='--')
+ax.plot(x, y2, label='Quadratic', marker='o')
+
+ax.set_title('Legend Example')
+ax.legend(loc='upper left', fontsize=10, frameon=True, facecolor='lightyellow', edgecolor='black', title='Functions')
+plt.show()
